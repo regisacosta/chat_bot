@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Movie Title Predictor</title>
+</head>
+<body>
+
+	<h1>Movie Title Predictor</h1>
+
+	<form method="post" action="/">
+		<label for="description">Enter a movie description:</label><br>
+		<input type="text" id="description" name="description"><br>
+		<input type="submit" value="Submit">
+	</form>
+
+	{% if prediction %}
+		<p>Predicted movie title: {{ prediction }}</p>
+	{% endif %}
+
+</body>
+</html>
